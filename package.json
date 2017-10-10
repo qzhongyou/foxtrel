@@ -1,0 +1,19 @@
+{
+  "name": "foxtrel",
+  "version": "1.0.0",
+  "description": "前端自动化工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/qzhongyou/foxtrel.git"
+  },
+  "author": "玉面",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qzhongyou/foxtrel/issues"
+  },
+  "homepage": "https://github.com/qzhongyou/foxtrel#readme"
+}
