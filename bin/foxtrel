@@ -1,1 +1,3 @@
 #!/usr/bin/env node
+
+require('../foxtrel.js').cli.run(process.argv);

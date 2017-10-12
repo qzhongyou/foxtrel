@@ -2,7 +2,7 @@
   "name": "foxtrel",
   "version": "1.0.0",
   "description": "前端自动化工具",
-  "main": "index.js",
+  "main": "foxtrel.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +15,10 @@
   "bugs": {
     "url": "https://github.com/qzhongyou/foxtrel/issues"
   },
-  "keywords":"foxtrel",
+  "keywords":["foxtrel"],
   "homepage": "https://github.com/qzhongyou/foxtrel#readme"
+  "bin": {
+    "fox": "bin/foxtrel",
+    "foxtrel": "bin/foxtrel"
+  }
 }
