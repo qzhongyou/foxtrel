@@ -15,10 +15,15 @@
   "bugs": {
     "url": "https://github.com/qzhongyou/foxtrel/issues"
   },
-  "keywords":["foxtrel"],
-  "homepage": "https://github.com/qzhongyou/foxtrel#readme"
+  "keywords": [
+    "foxtrel"
+  ],
+  "homepage": "https://github.com/qzhongyou/foxtrel#readme",
   "bin": {
     "fox": "bin/foxtrel",
     "foxtrel": "bin/foxtrel"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
   }
 }
