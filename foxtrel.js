@@ -19,12 +19,40 @@ foxtrel.cli.name = "foxtrel";
 
 foxtrel.cli.colors = require('colors');
 
-foxtrel.cli.info = fis.util.readJSON(__dirname + '/package.json');
+foxtrel.cli.info = foxtrel.util.readJSON(__dirname + '/package.json');
+
+
+
 
 //help
 foxtrel.cli.help = function () {
+    var content = [
+        '',
+        '  Usage: ' + foxtrel.cli.name + ' <command>',
+        '',
+        '  Commands:',
+        ''
+    ];
 
+    foxtrel.cli.help.commands.forEach(function(name){
+        var cmd = foxtrel.require('command', name);
+        name = cmd.name || name;
+        name = foxtrel.util.pad(name, 12);
+        content.push('    ' + name + (cmd.desc || ''));
+    });
+
+    content = content.concat([
+        '',
+        '  Options:',
+        '',
+        '    -h, --help     output usage information',
+        '    -v, --version  output the version number',
+        ''
+    ]);
+    console.log(content.join('\n'));
 }
+
+foxtrel.cli.help.commands = [ 'release', 'install', 'server' ];
 
 //版本
 foxtrel.cli.version = function () {
@@ -37,10 +65,15 @@ foxtrel.cli.version = function () {
     console.log(content);
 }
 
+
+
+
+
+
 //运行
 var comName = [].slice.call(argv._)[0];
 
-fis.cli.run = function () {
+foxtrel.cli.run = function () {
     //help
     if (argv['help'] || argv['h']) {
         foxtrel.cli.help();
