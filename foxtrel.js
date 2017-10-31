@@ -86,8 +86,8 @@ foxtrel.cli.run = function () {
         var program = require("commander");
         command.register(
             program.command(command.name || comName)
-                .usage(cmd.usage)
-                .description(cmd.desc)
+                .usage(command.usage)
+                .description(command.desc)
         );
         program.parse(process.argv);
     };

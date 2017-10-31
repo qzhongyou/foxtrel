@@ -24,8 +24,10 @@
     "foxtrel": "bin/foxtrel"
   },
   "dependencies": {
-    "minimist": "^1.2.0",
-    "foxtrel-commend-install": "latest",
-    "foxtrel-kernel": "latest"
+    "colors": "1.1.2",
+    "commander": "^2.11.0",
+    "foxtrel-command-install": "latest",
+    "foxtrel-kernel": "latest",
+    "minimist": "^1.2.0"
   }
 }
