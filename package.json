@@ -1,6 +1,6 @@
 {
   "name": "foxtrel",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "前端自动化工具",
   "main": "foxtrel.js",
   "scripts": {
@@ -27,6 +27,7 @@
     "colors": "1.1.2",
     "commander": "^2.11.0",
     "foxtrel-command-install": "latest",
+    "foxtrel-command-release": "latest",
     "foxtrel-kernel": "latest",
     "minimist": "^1.2.0"
   }
