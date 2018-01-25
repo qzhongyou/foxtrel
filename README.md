@@ -10,6 +10,10 @@
 npm install -g foxtrel 
 // 安装项目
 foxtrel install 模板名称       //如: foxtrel install foxtrel-generater-webapp
+//你的项目目录
+cd your package dirname
+//安装模块
+npm install
 //编译项目
 foxtrel release
 //开启本地服务,进行调试 暂时还未开发完成
@@ -25,6 +29,7 @@ foxtrel server
 * commander 命令行辅助工具,更好的处理用户输入。
 * co 异步流程控制工具。
 * inquirer 提供一个提问界面和查询会话流程。
+* package-json 包更新检测功能。
 
 ### 自定义项目结构和API使用
 [自定义项目结构说明](https://github.com/qzhongyou/foxtrel-generater-webapp/blob/master/README.md)
