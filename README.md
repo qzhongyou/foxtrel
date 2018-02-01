@@ -1,9 +1,10 @@
 ## foxtrel 
-> 前端构建工具
+> 前端构建工具,前后端集成解决方案,开箱即用
+
 ## foxtrel 功能点
 *  脚手架,自动生成功能
 *  项目自动构建工具功能
-*  项目本地服务功能  (开发中...)
+*  项目本地服务功能
 
 ## 安装使用
 ```
@@ -16,13 +17,13 @@ cd your package dirname
 npm install
 //编译项目
 foxtrel release
-//开启本地服务,进行调试 暂时还未开发完成
-foxtrel server 
+//开启本地服务,进行调试
+foxtrel server 启动文件    //如 foxtrel server output/server.js
 ```
 注:如有权限问题,使用`sudo foxtrel <command>`;
 
 
-## 脚手架功能,自动生成项目结构
+## 项目生成
 
 ### 脚手架技术选型
 * gulp 基于gulp自动化构建工具,生成项目。
@@ -35,7 +36,7 @@ foxtrel server
 [自定义项目结构说明](https://github.com/qzhongyou/foxtrel-generater-webapp/blob/master/README.md)
 
 
-## 项目自动构建工具
+## 编译构建
 > 基于webpack静态模块打包器,进行项目构建。根据用户配置信息加载不同的处理器,进行编译构建。
 ### 自定义配置
 > 默认读取配置文件`foxtrel.config.js`。通过`foxtrel release -f,--file 项目名称`,修改默认文件。
@@ -46,16 +47,27 @@ foxtrel server
 * webpack配置
 **处理器会提供默认配置**,我们可以修改默认配置。如:`foxtrel.config.set('webpack.output.path',__dirname+"/dist")`。注意,设置
 `output.path`后,编译输出地址将为当前地址,而不是根据项目名称的地址。
+等等。。。。
+
 ### 功能点
 * watch 监听文件变化,提供watch功能。`foxtrel release -w`
 * clean 清除编译输出的缓存文件。    `foxtrel release -c`
 * open 打开编译输出目录。          `foxtrel release open`
 
-## 启用本地服务 暂未完成
-> 基于多进程/集群的本地服务
+## 服务启动
+* 支持多进程/集群的本地服务
+* 支持服务端ES6编程
+* 支持服务端自动刷新
+* 支持客服端自动刷新  todo
 
-已实现: 多进程/集群模块   日志收集模块     
-未实现: 服务模块 
+
+
+## todo
+* React项目热更新
+* 客服端自动刷新
+* 提供后端框架
+* 提供单元测试
+
 
 
 
