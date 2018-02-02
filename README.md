@@ -21,7 +21,7 @@ foxtrel release
 foxtrel server 启动文件    //如 foxtrel server output/server.js
 //访问 http://localhost:3110
 ```
-注:如有权限问题,使用`sudo foxtrel <command>`,Mac上可以完美运行，Windows暂时没测;
+注:如有权限问题,使用`sudo foxtrel <command>`。项目Mac上可以完美运行，Windows暂时没测;
 
 
 ## 项目生成
