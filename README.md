@@ -19,8 +19,9 @@ npm install
 foxtrel release
 //开启本地服务,进行调试
 foxtrel server 启动文件    //如 foxtrel server output/server.js
+//访问 http://localhost:3110
 ```
-注:如有权限问题,使用`sudo foxtrel <command>`;
+注:如有权限问题,使用`sudo foxtrel <command>`,Mac上可以完美运行，Windows暂时没测;
 
 
 ## 项目生成
