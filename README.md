@@ -21,8 +21,8 @@ foxtrel release
 foxtrel server 启动文件    //如 foxtrel server output/server.js
 //访问 http://localhost:3110
 ```
-注:如有权限问题,使用`sudo foxtrel <command>`。项目Mac上可以完美运行，Windows暂时没测;
-
+注:如有权限问题,使用`sudo foxtrel <command>`。
+  项目Mac上可以完美运行，Windows暂时没测;
 
 ## 项目生成
 
@@ -59,13 +59,13 @@ foxtrel server 启动文件    //如 foxtrel server output/server.js
 * 支持多进程/集群的本地服务
 * 支持服务端ES6编程
 * 支持服务端自动刷新
-* 支持客服端自动刷新  todo
+* 支持客户端（浏览器）自动刷新  todo
 
 
 
 ## todo
 * React项目热更新
-* 客服端自动刷新
+* 客户端自动刷新
 * 提供后端框架
 * 提供单元测试
 
